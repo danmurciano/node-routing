@@ -6,7 +6,6 @@ const app = express();
 app.use(express.json());
 
 
-
 app.get("/mean", (req, res, next) => {
   let nums = validateInput(req);
   let result = {

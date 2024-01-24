@@ -1,7 +1,6 @@
 const ExpressError = require('./expressError');
 
 function validateInput(req) {
-  console.log(req.query.nums);
   if (req.query.nums.length === 0) {
     throw new ExpressError("nums are required", 400);
   }
